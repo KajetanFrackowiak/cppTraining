@@ -33,9 +33,8 @@ int main() {
 
     cityMap["Los Angeles"] = CityRecord{"Los Angeles", 3971883, 34.0, -118.2};
 
-    // std::map<CityRecord, uint32_t> cityFounded;
-    // cityFounded["Toronto", 2731571, 43.7, -79.42];
-
+     std::map<CityRecord, uint32_t> cityFounded;
+     cityFounded[CityRecord{ "San Francisco", 870887, 37.7, -122.4}];
 
     CityRecord& TorontoData = cityMap["Toronto"];
     std::cout << "Population of Toronto: " << TorontoData.Population << std::endl;
@@ -60,7 +59,11 @@ int main() {
         const CityRecord& city = kv.second;
         std::cout << "Name: " << name << " population: " << city.Population << std::endl;
     }
-
+    
+    std::cout << "CityFounded:" << std::endl;
+    for (const auto& [name, founded] : cityFounded) {
+        std::cout << "Name: " << name.Name << " Population: " << name.Population << " City: " << founded << std::endl;
+    }
     return 0;
 }
 
