@@ -1,0 +1,3 @@
+/home/frackowiak/Documents/cppTraining/Hyla/Part8/build/CMakeFiles/threads.dir
+/home/frackowiak/Documents/cppTraining/Hyla/Part8/build/CMakeFiles/edit_cache.dir
+/home/frackowiak/Documents/cppTraining/Hyla/Part8/build/CMakeFiles/rebuild_cache.dir
